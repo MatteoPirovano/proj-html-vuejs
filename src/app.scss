@@ -1,4 +1,49 @@
-$colorDebug: red;
-body {
-background-color: $colorDebug;
+@import "partials/_commons";
+@import "partials/_variables";
+@import "partials/_mixins";
+
+header {
+  height: 100px;
+  width: 100%;
+  background-color: $colorCodGrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+  img {
+    margin-left: 20px;
+  }
+}
+
+.header-right {
+  ul {
+    @include listInline;
+    li {
+      margin: 20px;
+      a {
+        text-decoration: none;
+        color: $colorSilver;
+        &:hover{
+          color: $colorWhite;
+        }
+      }
+      span {
+        padding: 5px 7px;
+        margin-left: 10px;
+        font-size: 12px;
+        font-weight: 500;
+        color: $colorCodGrey;
+        background-color: $colorYellow;
+      }
+    }
+  }
+}
+.blue-button {
+  @include Btn;
+  font-size: 14px;
+  background-color: $colorViolet;
+  font-weight: 500;
 }

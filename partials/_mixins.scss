@@ -1,0 +1,12 @@
+@mixin listInline {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: baseline;
+}
+@mixin Btn {
+  padding:10px 20px;
+  color: $colorWhite;
+  cursor: pointer;
+  border-radius: 40px;
+}
