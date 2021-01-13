@@ -8,7 +8,20 @@
   height: 100%;
   padding: 0 90px;
 }
-
+@mixin circlePlayer {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: $colorWhite;
+}
+@mixin boxImg {
+  height: 400px;
+  width: 360px;
+  border-radius: 4px 4px 40px 4px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
 @mixin Btn {
   padding:15px 30px;
   color: $colorWhite;
