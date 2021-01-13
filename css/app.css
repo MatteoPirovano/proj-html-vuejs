@@ -71,40 +71,44 @@ header {
   background-position: top right;
   background-size: cover;
 }
-.jumbotron .container-left {
+.jumbotron .container {
   height: 100%;
   padding: 0 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
-.jumbotron .container-left h3 {
+
+.jumbo-left h3 {
   padding-top: 100px;
   font-size: 27px;
   font-weight: 500;
   color: #ec5a57;
 }
-.jumbotron .container-left h1 {
+.jumbo-left h1 {
   font-size: 75px;
   font-weight: 500;
   color: #ffffff;
 }
-.jumbotron .container-left span {
+.jumbo-left span {
   font-size: 23px;
   font-weight: 500;
   color: #bcbcbc;
 }
-.jumbotron .container-left ul {
+.jumbo-left ul {
   display: flex;
   flex-direction: row;
   list-style: none;
   align-items: baseline;
   margin-top: 50px;
 }
-.jumbotron .container-left ul li {
+.jumbo-left ul li {
   font-size: 18px;
 }
-.jumbotron .container-left ul li:nth-child(2) {
+.jumbo-left ul li:nth-child(2) {
   margin-left: 10px;
 }
-.jumbotron .container-left ul .trasparent-button {
+.jumbo-left ul .trasparent-button {
   padding: 15px 30px;
   color: #ffffff;
   cursor: pointer;
@@ -112,11 +116,37 @@ header {
   border: 2px solid #bcbcbc;
   font-weight: 500;
 }
-.jumbotron .container-left ul .trasparent-button:hover {
+.jumbo-left ul .trasparent-button:hover {
   background-color: #ffffff;
   border: 2px solid #ffffff;
   color: #000000;
 }
-.jumbotron .container-left ul i {
+.jumbo-left ul i {
   vertical-align: middle;
+}
+
+.jumbo-right {
+  height: 100%;
+  width: 30%;
+  position: relative;
+}
+.jumbo-right .jumbo-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(20%, -84%);
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.jumbo-right .jumbo-video i {
+  color: #4154FF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.jumbo-right .jumbo-video:hover i {
+  color: #ec5a57;
 }
