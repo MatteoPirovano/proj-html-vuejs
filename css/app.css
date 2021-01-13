@@ -52,9 +52,9 @@ header {
 
 .blue-button {
   padding: 15px 30px;
+  border-radius: 40px;
   color: #ffffff;
   cursor: pointer;
-  border-radius: 40px;
   background-color: #4154FF;
   font-weight: 500;
   font-size: 14px;
@@ -72,11 +72,9 @@ header {
   background-size: cover;
 }
 .jumbotron .container {
-  height: 100%;
   padding: 0 90px;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
 }
 
 .jumbo-left h3 {
@@ -90,9 +88,12 @@ header {
   font-weight: 500;
   color: #ffffff;
 }
-.jumbo-left span {
-  font-size: 23px;
-  font-weight: 500;
+.jumbo-left img {
+  width: 85px;
+}
+.jumbo-left p {
+  font-size: 25px;
+  font-weight: 400;
   color: #bcbcbc;
 }
 .jumbo-left ul {
@@ -100,7 +101,7 @@ header {
   flex-direction: row;
   list-style: none;
   align-items: baseline;
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .jumbo-left ul li {
   font-size: 18px;
@@ -110,9 +111,9 @@ header {
 }
 .jumbo-left ul .trasparent-button {
   padding: 15px 30px;
+  border-radius: 40px;
   color: #ffffff;
   cursor: pointer;
-  border-radius: 40px;
   border: 2px solid #bcbcbc;
   font-weight: 500;
 }
@@ -126,26 +127,23 @@ header {
 }
 
 .jumbo-right {
-  height: 100%;
   width: 30%;
-  position: relative;
+  padding-top: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .jumbo-right .jumbo-video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(20%, -84%);
   height: 100px;
   width: 100px;
   border-radius: 50%;
   background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .jumbo-right .jumbo-video i {
   color: #4154FF;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 .jumbo-right .jumbo-video:hover i {
   color: #ec5a57;
@@ -157,7 +155,6 @@ header {
   background-image: linear-gradient(150deg, #0219eb 0%, #d5000b 100%);
 }
 .main-top .container {
-  height: 100%;
   padding: 0 90px;
   position: relative;
   display: flex;
@@ -175,6 +172,11 @@ header {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  transition: 0.4s;
+}
+.main-top .container .box-image:hover, .main-top .container .box-image2:hover, .main-top .container .box-image3:hover {
+  height: 410px;
+  width: 370px;
 }
 .main-top .container .box-image h5, .main-top .container .box-image2 h5, .main-top .container .box-image3 h5 {
   font-size: 35px;
@@ -198,4 +200,95 @@ header {
 .main-top .container .box-image3 {
   background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 11%, rgba(0, 0, 0, 0.7) 100%), url("../img/box3.jpg");
   transform: translateY(-17%);
+}
+.main-top .main-top-text {
+  margin: 0 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.main-top .main-top-text h2 {
+  padding-top: 60px;
+  font-size: 48px;
+  font-weight: 500;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.4;
+}
+.main-top .main-top-text img {
+  width: 85px;
+}
+.main-top .main-top-text ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: baseline;
+}
+.main-top .main-top-text ul li {
+  padding: 0 10px;
+  font-size: 22px;
+  color: #ffffff;
+}
+.main-top .main-top-text ul li:first-child img {
+  width: 70px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.main-top .main-top-text ul li:last-child {
+  opacity: 0.6;
+}
+
+.main-jumbo {
+  height: 660px;
+  width: 100%;
+  background-color: #060606;
+  background-image: linear-gradient(90deg, #060606 45%, rgba(6, 6, 6, 0) 75%), url("../img/banner1-2x.jpg");
+  background-position: top right;
+  background-size: cover;
+}
+.main-jumbo .container {
+  padding: 0 90px;
+  display: flex;
+  flex-direction: row;
+}
+
+.jumbo-section {
+  padding-right: 30%;
+}
+.jumbo-section h3 {
+  padding-top: 100px;
+  font-size: 27px;
+  font-weight: 500;
+  color: #ec5a57;
+}
+.jumbo-section h2 {
+  font-size: 58px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.jumbo-section img {
+  width: 85px;
+}
+.jumbo-section p {
+  font-size: 25px;
+  font-weight: 400;
+  color: #bcbcbc;
+}
+.jumbo-section ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: baseline;
+  margin-bottom: 30px;
+}
+.jumbo-section ul li {
+  font-size: 18px;
+}
+.jumbo-section ul input {
+  padding: 15px 350px 15px 30px;
+  border-radius: 40px;
+  margin-right: 15px;
+}
+.jumbo-section ul i {
+  vertical-align: middle;
 }

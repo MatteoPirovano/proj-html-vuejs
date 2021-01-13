@@ -9,7 +9,6 @@
     @include widthContainer;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
   }
 }
 
@@ -25,14 +24,17 @@
     font-weight: 500;
     color: $colorWhite;
   }
-  span {
-    font-size: 23px;
-    font-weight: 500;
+  img {
+    width: 85px;
+  }
+  p {
+    font-size: 25px;
+    font-weight: 400;
     color: $colorSilver;
   }
   ul {
     @include listInline;
-    margin-top: 50px;
+    margin-top: 30px;
     li {
       font-size: 18px;
       &:nth-child(2) {
@@ -48,21 +50,18 @@
   }
 }
 .jumbo-right {
-  height: 100%;
   width: 30%;
-  position: relative;
+  padding-top:100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .jumbo-video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(20%, -84%);
     @include circlePlayer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     i {
       color:$colorViolet;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
     }
     &:hover i {
       color: $colorOrange;
