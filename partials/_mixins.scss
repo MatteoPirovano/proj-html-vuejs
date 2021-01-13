@@ -4,9 +4,32 @@
   list-style: none;
   align-items: baseline;
 }
+@mixin widthContainer {
+  height: 100%;
+  padding: 0 90px;
+}
+
 @mixin Btn {
-  padding:10px 20px;
+  padding:15px 30px;
   color: $colorWhite;
   cursor: pointer;
   border-radius: 40px;
+}
+@mixin blueBtn {
+  @include Btn;
+  background-color: $colorViolet;
+  font-weight: 500;
+  &:hover {
+    background-color: $colorOrange;
+  }
+}
+@mixin trasparentBtn {
+  @include Btn;
+  border: 2px solid $colorSilver;
+  font-weight: 500;
+  &:hover {
+    background-color: $colorWhite;
+    border: 2px solid $colorWhite;
+    color: $colorBlack;
+  }
 }
