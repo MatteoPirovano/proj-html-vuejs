@@ -11,14 +11,17 @@
     .box-image, .box-image2, .box-image3 {
       @include boxImg;
       height: 400px;
+      padding-left: 30px;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
-      align-items: center;
       transition: 0.4s;
       &:hover {
         height: 410px;
         width: 370px;
+      }
+      img {
+            width: 50px;
       }
       h5 {
         font-size: 35px;

@@ -168,15 +168,18 @@ header {
   background-position: center;
   background-size: cover;
   height: 400px;
+  padding-left: 30px;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  align-items: center;
   transition: 0.4s;
 }
 .main-top .container .box-image:hover, .main-top .container .box-image2:hover, .main-top .container .box-image3:hover {
   height: 410px;
   width: 370px;
+}
+.main-top .container .box-image img, .main-top .container .box-image2 img, .main-top .container .box-image3 img {
+  width: 50px;
 }
 .main-top .container .box-image h5, .main-top .container .box-image2 h5, .main-top .container .box-image3 h5 {
   font-size: 35px;
@@ -293,6 +296,54 @@ header {
   vertical-align: middle;
 }
 
+.main-sport {
+  height: 530px;
+  background-color: #ffffff;
+}
+
+.main-last {
+  height: 530px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(151deg, rgba(6, 25, 231, 0.4) 35%, rgba(206, 1, 18, 0.4) 100%), url("../img/banner14-2x.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main-last .jumbo-video {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-last .jumbo-video i {
+  color: #4154FF;
+}
+.main-last .jumbo-video:hover i {
+  color: #ec5a57;
+}
+.main-last h2 {
+  font-size: 58px;
+  font-weight: 500;
+  padding: 10px 0;
+  color: #ffffff;
+}
+.main-last p {
+  font-size: 38px;
+  font-weight: 500;
+  color: #FFF941;
+}
+.main-last a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
 footer {
   background-color: #060606;
 }
@@ -301,7 +352,7 @@ footer .footer-top {
   padding-top: 140px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 footer .footer-top .brand-identity {
   width: 370px;
@@ -327,6 +378,7 @@ footer .footer-top .brand-identity ul li {
   color: #ec5a57;
 }
 footer .footer-top .new-article {
+  width: 370px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -349,6 +401,7 @@ footer .footer-top .new-article ul li:hover {
   color: #ec5a57;
 }
 footer .footer-top .general-information {
+  width: 370px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -361,6 +414,7 @@ footer .footer-top .general-information h6 {
 }
 footer .footer-top .general-information ul {
   list-style: none;
+  text-align: center;
 }
 footer .footer-top .general-information ul li {
   font-size: 20px;
