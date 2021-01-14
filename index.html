@@ -9,153 +9,157 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
   <link rel="stylesheet" href="css/app.css">
   <title>Avada Fitness</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
 </head>
 <body>
-  <!-- HEADER -->
-  <header>
-    <div class="header-left">  <!-- HEADER-LEFT-->
-      <div class="logo">
-        <img src="img/logo.png" alt="Avada fitness logo">
+  <div id="root">
+    <!-- HEADER -->
+    <header>
+      <div class="header-left">  <!-- HEADER-LEFT-->
+        <div class="logo">
+          <img src="img/logo.png" alt="Avada fitness logo">
+        </div>
       </div>
-    </div>
-    <div class="header-right"> <!-- HEADER-RIGHT-->
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Videos</a></li>
-        <li><a href="">Blog</a></li>
-        <li><a href="">Store</a><span>new</span></li>
-        <li class="blue-button">Schedule a workout</li>
-        <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
-        <li><a href=""><i class="fas fa-search"></i></a></li>
-      </ul>
-    </div>
-  </header>
-  <!-- /HEADER -->
-  <!-- JUMBOTRON -->
-  <section class="jumbotron">
-    <div class="container">
-      <div class="jumbo-left"> <!--JUMBO-LEFT-->
-        <h3>Certified fitness professional</h3>
-        <h1>Take control of your health</h1>
-        <img src="img/wave.svg" alt="wave-line">
-        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</p>
+      <div class="header-right"> <!-- HEADER-RIGHT-->
         <ul>
-          <li class="blue-button"><i class="fab fa-youtube"></i>  Visit my YouTube channel</li>
-          <li class="trasparent-button">Buy Avada today  <i class="fas fa-arrow-right"></i></li>
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Videos</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Store</a><span>new</span></li>
+          <li class="blue-button">Schedule a workout</li>
+          <li><a href=""><i class="fas fa-shopping-cart"></i></a></li>
+          <li><a href=""><i class="fas fa-search"></i></a></li>
         </ul>
       </div>
-      <div class="jumbo-right"> <!--JUMBO-RIGHT-->
-        <div class="jumbo-video"><i class="fas fa-play"></i></div>
-      </div>
-    </div>
-  </section>
-<!-- /JUMBOTRON -->
-<!-- MAIN -->
-<main>
-  <div class="main-top"> <!-- MAIN-TOP -->
-    <div class="container">
-      <div class="box-image">
-        <img src="img/wave.svg" alt="wave-line">
-        <h5>Crossfit workout</h5>
-        <span>Push your limits</span>
-      </div>
-      <div class="box-image2">
-        <img src="img/wave.svg" alt="wave-line">
-        <h5>Crossfit workout</h5>
-        <span>Push your limits</span>
-      </div>
-      <div class="box-image3">
-        <img src="img/wave.svg" alt="wave-line">
-        <h5>Crossfit workout</h5>
-        <span>Push your limits</span>
-      </div>
-    </div>
-    <div class="main-top-text">
-      <h2>“How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser.”</h2>
-      <img src="img/wave.svg" alt="wave-line">
-      <ul>
-        <li><img src="img/avatar.jpg" alt="Brad Johnson"></li>
-        <li>Brad Johnson</li>
-        <li>Las Vegas</li>
-      </ul>
-    </div>
-  </div>
-  <section class="main-jumbo"><!-- MAIN-JUMBO -->
-    <div class="container">
-      <div class="jumbo-section"> <!--JUMBO-SECTION-->
-        <h3>Join our mailing list today</h3>
-        <h2>Insider offers & flash sales in your inbox every week.</h2>
-        <img src="img/wave.svg" alt="wave-line">
-        <ul>
-          <li><input type="email" name="mail" placeholder="Insert your email...*"></li>
-          <li class="blue-button">Subscribe</li>
-        </ul>
-        <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur adipiscing elit sed porttitor lectus.</p>
-      </div>
-    </div>
-  </section>
-  <div class="main-sport"><!-- MAIN-SPORT -->
-    <div class="container">
-      
-    </div>
-  </div>
-  <div class="main-last"><!-- MAIN-LAST -->
-    <div class="jumbo-video"><i class="fas fa-play"></i></div>
-    <h2>Crossfit workout of the day</h2>
-    <p>November 15th, 2019</p>
-    <a>View all videos →</a>
-  </div>
-</main>
-<!-- /MAIN -->
-<!-- FOOTER -->
- <footer>
-   <div class="container">
-     <div class="footer-top"><!--FOOTER-TOP-->
-       <div class="brand-identity"> <!--BRAND-IDENTITY-->
-          <img src="img/logo.png" alt="Avada fitness logo footer">
-          <p>Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pellentesque consectetur amet purus ultrices mauris.</p>
+    </header>
+    <!-- /HEADER -->
+    <!-- JUMBOTRON -->
+    <section class="jumbotron">
+      <div class="container">
+        <div class="jumbo-left"> <!--JUMBO-LEFT-->
+          <h3>Certified fitness professional</h3>
+          <h1>Take control of your health</h1>
+          <img src="img/wave.svg" alt="wave-line">
+          <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet.</p>
           <ul>
-            <li><i class="fab fa-facebook-f"></i></li>
-            <li><i class="fab fa-twitter"></i></li>
-            <li><i class="fab fa-youtube"></i></li>
-            <li><i class="fab fa-instagram"></i></li>
-            <li><i class="fab fa-linkedin-in"></i></li>
+            <li class="blue-button"><i class="fab fa-youtube"></i>  Visit my YouTube channel</li>
+            <li class="trasparent-button">Buy Avada today  <i class="fas fa-arrow-right"></i></li>
           </ul>
+        </div>
+        <div class="jumbo-right"> <!--JUMBO-RIGHT-->
+          <div class="jumbo-video"><i class="fas fa-play"></i></div>
+        </div>
+      </div>
+    </section>
+  <!-- /JUMBOTRON -->
+  <!-- MAIN -->
+  <main>
+    <div class="main-top"> <!-- MAIN-TOP -->
+      <div class="container">
+        <div class="box-image">
+          <img src="img/wave.svg" alt="wave-line">
+          <h5>Crossfit workout</h5>
+          <span>Push your limits</span>
+        </div>
+        <div class="box-image2">
+          <img src="img/wave.svg" alt="wave-line">
+          <h5>Crossfit workout</h5>
+          <span>Push your limits</span>
+        </div>
+        <div class="box-image3">
+          <img src="img/wave.svg" alt="wave-line">
+          <h5>Crossfit workout</h5>
+          <span>Push your limits</span>
+        </div>
+      </div>
+      <div class="main-top-text">
+        <h2>“How you respond to the challenge in the second half will determine what you become after the game, whether you are a winner or a loser.”</h2>
+        <img src="img/wave.svg" alt="wave-line">
+        <ul>
+          <li><img src="img/avatar.jpg" alt="Brad Johnson"></li>
+          <li>Brad Johnson</li>
+          <li>Las Vegas</li>
+        </ul>
+      </div>
+    </div>
+    <section class="main-jumbo"><!-- MAIN-JUMBO -->
+      <div class="container">
+        <div class="jumbo-section"> <!--JUMBO-SECTION-->
+          <h3>Join our mailing list today</h3>
+          <h2>Insider offers & flash sales in your inbox every week.</h2>
+          <img src="img/wave.svg" alt="wave-line">
+          <ul>
+            <li><input type="email" name="mail" placeholder="Insert your email...*"></li>
+            <li class="blue-button">Subscribe</li>
+          </ul>
+          <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus dolor sit amet, consectetur adipiscing elit sed porttitor lectus.</p>
+        </div>
+      </div>
+    </section>
+    <div class="main-sport"><!-- MAIN-SPORT -->
+      <div class="container">
+
+      </div>
+    </div>
+    <div class="main-last"><!-- MAIN-LAST -->
+      <div class="jumbo-video"><i class="fas fa-play"></i></div>
+      <h2>Crossfit workout of the day</h2>
+      <p>November 15th, 2019</p>
+      <a>View all videos →</a>
+    </div>
+  </main>
+  <!-- /MAIN -->
+  <!-- FOOTER -->
+   <footer>
+     <div class="container">
+       <div class="footer-top"><!--FOOTER-TOP-->
+         <div class="brand-identity"> <!--BRAND-IDENTITY-->
+            <img src="img/logo.png" alt="Avada fitness logo footer">
+            <p>Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pellentesque consectetur amet purus ultrices mauris.</p>
+            <ul>
+              <li><i class="fab fa-facebook-f"></i></li>
+              <li><i class="fab fa-twitter"></i></li>
+              <li><i class="fab fa-youtube"></i></li>
+              <li><i class="fab fa-instagram"></i></li>
+              <li><i class="fab fa-linkedin-in"></i></li>
+            </ul>
+         </div>
+         <div class="new-article"> <!--NEW-ARTICLE-->
+          <h6>Recent posts</h6>
+           <ul>
+             <li><i class="fas fa-angle-right"></i> The best protein shake</li>
+             <li><i class="fas fa-angle-right"></i> Ultimate cardio workout</li>
+             <li><i class="fas fa-angle-right"></i> New juices available now</li>
+             <li><i class="fas fa-angle-right"></i> Tips to find training partners</li>
+             <li><i class="fas fa-angle-right"></i> 20 best healthy recipes</li>
+           </ul>
+         </div>
+         <div class="general-information">
+           <h6>Contact Informations</h6>
+           <ul>
+             <li>4746 Tipple Road Michigan 48449</li>
+             <li>Mobile : 1.800.000.0000</li>
+             <li>Email : info@your-company.com</li>
+           </ul>
+         </div>
        </div>
-       <div class="new-article"> <!--NEW-ARTICLE-->
-        <h6>Recent posts</h6>
+       <div class="footer-bottom"><!--FOOTER-BOTTOM-->
          <ul>
-           <li><i class="fas fa-angle-right"></i> The best protein shake</li>
-           <li><i class="fas fa-angle-right"></i> Ultimate cardio workout</li>
-           <li><i class="fas fa-angle-right"></i> New juices available now</li>
-           <li><i class="fas fa-angle-right"></i> Tips to find training partners</li>
-           <li><i class="fas fa-angle-right"></i> 20 best healthy recipes</li>
-         </ul>
-       </div>
-       <div class="general-information">
-         <h6>Contact Informations</h6>
-         <ul>
-           <li>4746 Tipple Road Michigan 48449</li>
-           <li>Mobile : 1.800.000.0000</li>
-           <li>Email : info@your-company.com</li>
+           <li>© Copyright 2012 - 2021</li>
+           <li>|</li>
+           <li>Avada theme by <span>ThemeFusion</span></li>
+           <li>|</li>
+           <li>All rights reserved</li>
+           <li>|</li>
+           <li>Powered by <span>WordPress</span></li>
          </ul>
        </div>
      </div>
-     <div class="footer-bottom"><!--FOOTER-BOTTOM-->
-       <ul>
-         <li>© Copyright 2012 - 2021</li>
-         <li>|</li>
-         <li>Avada theme by <span>ThemeFusion</span></li>
-         <li>|</li>
-         <li>All rights reserved</li>
-         <li>|</li>
-         <li>Powered by <span>WordPress</span></li>
-       </ul>
-     </div>
-   </div>
- </footer>
-<!-- /FOOTER -->
+   </footer>
+  <!-- /FOOTER -->
+  </div>
+  <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>
