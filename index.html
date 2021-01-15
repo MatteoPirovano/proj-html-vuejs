@@ -82,6 +82,31 @@
           </ul>
         </div>
       </div>
+      <div class="main-top2"><!-- MAIN-TOP2-->
+        <div class="main-top2-left">
+          <img src="img/box.jpg" alt="box">
+          <div class="jumbo-video"><i class="fas fa-play"></i></div>
+        </div>
+        <div class="main-top2-right">
+          <p>Tune up your workouts</p>
+          <h2>The best health & fitness advice online</h2>
+          <div class="youtube">
+            <img src="img/unnamed.jpg" alt="squares">
+            <div class="youtube-right">
+              <p>ThemeFusion</p>
+              <div class="left">
+                <span><i class="fab fa-youtube"></i></span>
+                <span>YouTube</span>
+              </div>
+            </div>
+          </div>
+          <p>Arcu eu facilisi ut quisque placerat nunc habitant. Magna semper mauris, venenatis, leo integer sit pellentesque.</p>
+          <div class="red-button">
+            <span><i class="fab fa-youtube"></i></span>
+            <span>Visit my YouTube channel</span>
+          </div>
+        </div>
+      </div>
       <div class="main-videos"><!-- MAIN-VIDEOS -->
         <div class="container">
           <div>
@@ -91,7 +116,6 @@
           <div class="video-section">
             <div class="video" v-for="video in videosData">
               <img :src="video.photo" alt="photo video">
-              <div class="jumbo-video"><i class="fas fa-play"></i></div>
               <h5>{{video.title}}</h5>
               <p>{{video.description}}</p>
             </div>
@@ -112,6 +136,17 @@
           </div>
         </div>
       </section>
+      <div class="main-opportunities"><!-- MAIN-OPPORTUNITIES -->
+        <div class="container">
+          <div class="opportunity" v-for="opportunity in opportunitiesData">
+            <i :class="opportunity.image"></i>
+            <h4>{{opportunity.name}}</h4>
+            <h5>{{opportunity.secondName}}</h5>
+            <p>{{opportunity.description}}</p>
+            <p>{{opportunity.link}} <i class="fas fa-angle-right"></i></p>
+          </div>
+        </div>
+      </div>
       <div class="main-articles"><!-- MAIN-ARTICLES -->
         <div class="container">
           <div>

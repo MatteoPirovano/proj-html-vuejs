@@ -9,6 +9,29 @@ var app = new Vue ({
       { navSection: 'Videos' },
       { navSection: 'Blog' }
     ],
+    opportunitiesData:[
+      {
+        image:'fas fa-users',
+        name:'Team training',
+        secondName:'Find a partner',
+        description:'Vestibulum, curabitur eu sem nibh ultricess sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique',
+        link:'Find a partner'
+      },
+      {
+        image: 'fas fa-dumbbell',
+        name:'Crossfit workout',
+        secondName:'Push your limits',
+        description:'Vestibulum, curabitur eu sem nibh ultricess sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique',
+        link:'Learn about Crossfit'
+      },
+      {
+        image:'fas fa-running',
+        name:'Weight loss plan',
+        secondName:'Shen those pounds',
+        description:'Vestibulum, curabitur eu sem nibh ultricess sit nulla adipiscing. Nisl sit fames amet senectus eget sed duis vehicula. Tristique',
+        link:'Schedule a workout'
+      }
+    ],
     videosData:[
       {
         photo: 'img/video2-2x.jpg',

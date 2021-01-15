@@ -248,6 +248,104 @@ header {
   opacity: 0.6;
 }
 
+.main-top2 {
+  height: 700px;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+}
+.main-top2 .main-top2-left {
+  height: 100%;
+  width: 50%;
+  position: relative;
+}
+.main-top2 .main-top2-left img {
+  position: absolute;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 770px;
+  width: 660px;
+  transform: translateY(-8%);
+}
+.main-top2 .main-top2-left .jumbo-video {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-top2 .main-top2-left .jumbo-video i {
+  color: #4154FF;
+}
+.main-top2 .main-top2-left .jumbo-video:hover i {
+  color: #ec5a57;
+}
+.main-top2 .main-top2-right {
+  height: 100%;
+  width: 50%;
+  padding: 100px 50px 100px 100px;
+}
+.main-top2 .main-top2-right p:first-child {
+  font-size: 28px;
+  color: #4154FF;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+.main-top2 .main-top2-right h2 {
+  font-size: 60px;
+  font-weight: 500;
+}
+.main-top2 .main-top2-right .youtube {
+  display: flex;
+  flex-direction: row;
+  padding: 30px 0;
+}
+.main-top2 .main-top2-right .youtube img {
+  height: 50px;
+  padding-right: 10px;
+}
+.main-top2 .main-top2-right .youtube p {
+  font-size: 13px;
+  color: #000000;
+  margin: 0;
+}
+.main-top2 .main-top2-right .youtube .left {
+  background-color: #CF000F;
+  color: #ffffff;
+  padding: 2px;
+}
+.main-top2 .main-top2-right p {
+  font-size: 23px;
+  color: #bcbcbc;
+}
+.main-top2 .main-top2-right .red-button {
+  padding: 15px 30px;
+  border-radius: 40px;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #CF000F;
+  font-weight: 500;
+  width: 300px;
+  font-size: 14px;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 40px;
+}
+.main-top2 .main-top2-right .red-button:hover {
+  background-color: rgba(207, 0, 15, 0.5);
+}
+.main-top2 .main-top2-right .red-button i {
+  padding-left: 10px;
+}
+
 .main-videos {
   height: 600px;
 }
@@ -278,7 +376,6 @@ header {
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
-  position: relative;
 }
 .main-videos .container .video-section .video {
   display: flex;
@@ -290,28 +387,6 @@ header {
   width: 360px;
   margin-top: 25px;
   border-radius: 4px 4px 40px 4px;
-}
-.main-videos .container .video-section .video .jumbo-video {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: #ffffff;
-  height: 60px;
-  width: 60px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.main-videos .container .video-section .video .jumbo-video i {
-  font-size: 10px;
-  color: #4154FF;
-}
-.main-videos .container .video-section .video .jumbo-video:hover i {
-  color: #ec5a57;
 }
 .main-videos .container .video-section .video h5 {
   font-size: 28px;
@@ -379,6 +454,63 @@ header {
 }
 .jumbo-section ul i {
   vertical-align: middle;
+}
+
+.main-opportunities {
+  height: 720px;
+  background-color: #060606;
+}
+.main-opportunities .container {
+  padding: 0 90px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-opportunities .opportunity {
+  height: 540px;
+  width: 360px;
+  border: 4px solid #4154FF;
+  border-radius: 8px;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0 45px;
+  transition: 0.4s;
+}
+.main-opportunities .opportunity:hover {
+  height: 550px;
+  width: 370px;
+}
+.main-opportunities .opportunity i {
+  font-size: 50px;
+  padding-top: 75px;
+}
+.main-opportunities .opportunity h4 {
+  font-size: 30px;
+  font-weight: 500;
+  padding-top: 35px;
+}
+.main-opportunities .opportunity h5 {
+  font-size: 24px;
+  font-weight: 500;
+  padding-top: 15px;
+  color: #FFF941;
+}
+.main-opportunities .opportunity p {
+  font-weight: 400;
+  line-height: 1.8;
+  padding-top: 25px;
+  color: #bcbcbc;
+}
+.main-opportunities .opportunity p:last-child {
+  font-weight: 500;
+  color: #ffffff;
+}
+.main-opportunities .opportunity p:last-child i {
+  padding: 0;
+  font-size: 18px;
 }
 
 .main-articles {

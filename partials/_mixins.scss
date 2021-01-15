@@ -44,3 +44,11 @@
     color: $colorBlack;
   }
 }
+@mixin redBtn {
+  @include Btn;
+  background-color: $colorRed;
+  font-weight: 500;
+  &:hover {
+    background-color: rgba(207, 0, 15, 0.5)
+  }
+}
