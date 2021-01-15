@@ -1,8 +1,54 @@
 var app = new Vue ({
   el: '#root',
   data: {
-    logoData:[],
-    headerData:[],
+    logoData:'img/logo.png',
+    headerData:[
+      { navSection: 'Home' },
+      { navSection: 'Services' },
+      { navSection: 'About' },
+      { navSection: 'Videos' },
+      { navSection: 'Blog' }
+    ],
+    videosData:[
+      {
+        photo: 'img/video2-2x.jpg',
+        title: 'Thighs & glute workout',
+        description:'Increase your mobility',
+      },
+      {
+        photo: 'img/video7-2x.jpg',
+        title: 'Lift, firm & perk up',
+        description:'feel young again',
+      },
+      {
+        photo: 'img/video9-2x.jpg',
+        title: 'Slim & trim your waist',
+        description:'Shed those extra pounds',
+      }
+    ],
+    articlesData:[
+      {
+        photo: 'img/blog4-2x.jpg',
+        title: 'The best protein shake',
+        author: 'Admin',
+        date: 'November 26th, 2019',
+        section:'Gym',
+      },
+      {
+        photo: 'img/blog1-2x.jpg',
+        title: 'Ultimate cardio workout',
+        author: 'Admin',
+        date: 'November 26th, 2019',
+        section:'Gym',
+      },
+      {
+        photo: 'img/blog3-2x.jpg',
+        title: 'New juices available now',
+        author: 'Admin',
+        date: 'November 26th, 2019',
+        section:'Gym',
+      }
+    ],
     socialNetworkData:[
       { name: 'fab fa-facebook-f' },
       { name: 'fab fa-twitter', },

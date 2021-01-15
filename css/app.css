@@ -24,6 +24,13 @@ header {
   margin-left: 20px;
 }
 
+.header-right {
+  display: flex;
+  flex-direction: row;
+}
+.header-right ul:first-child {
+  padding-top: 11px;
+}
 .header-right ul {
   display: flex;
   flex-direction: row;
@@ -241,6 +248,83 @@ header {
   opacity: 0.6;
 }
 
+.main-videos {
+  height: 600px;
+}
+.main-videos .container {
+  padding: 0 90px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.main-videos .container div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 27px;
+  font-weight: 500;
+}
+.main-videos .container div p:last-child {
+  padding-right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.main-videos .container div p:last-child i {
+  vertical-align: middle;
+}
+.main-videos .container div p:last-child:hover {
+  color: #4154FF;
+}
+.main-videos .container .video-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  position: relative;
+}
+.main-videos .container .video-section .video {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+}
+.main-videos .container .video-section .video img {
+  height: 230px;
+  width: 360px;
+  margin-top: 25px;
+  border-radius: 4px 4px 40px 4px;
+}
+.main-videos .container .video-section .video .jumbo-video {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-videos .container .video-section .video .jumbo-video i {
+  font-size: 10px;
+  color: #4154FF;
+}
+.main-videos .container .video-section .video .jumbo-video:hover i {
+  color: #ec5a57;
+}
+.main-videos .container .video-section .video h5 {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 25px 0 10px;
+  text-align: center;
+}
+.main-videos .container .video-section .video p {
+  font-size: 20px;
+  text-align: center;
+  color: #4154FF;
+}
+
 .main-jumbo {
   height: 660px;
   width: 100%;
@@ -297,10 +381,80 @@ header {
   vertical-align: middle;
 }
 
+.main-articles {
+  height: 600px;
+}
+.main-articles .container {
+  padding: 0 90px;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.main-articles .container div {
+  display: flex;
+  justify-content: space-between;
+  font-size: 27px;
+  font-weight: 500;
+}
+.main-articles .container div p:last-child {
+  padding-right: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+.main-articles .container div p:last-child i {
+  vertical-align: middle;
+}
+.main-articles .container div p:last-child:hover {
+  color: #4154FF;
+}
+.main-articles .container .article-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.main-articles .container .article-section .article {
+  display: flex;
+  flex-direction: column;
+  width: 380px;
+}
+.main-articles .container .article-section .article img {
+  height: 230px;
+  width: 360px;
+  margin-top: 25px;
+  cursor: pointer;
+}
+.main-articles .container .article-section .article img:hover {
+  background-image: linear-gradient(to top, #4154FF 0, #000000 100%);
+}
+.main-articles .container .article-section .article h5 {
+  font-size: 28px;
+  font-weight: 500;
+  padding: 25px 0 10px 15px;
+}
+.main-articles .container .article-section .article ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: baseline;
+  padding-left: 15px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #bcbcbc;
+}
+.main-articles .container .article-section .article ul li span {
+  color: #000000;
+  cursor: pointer;
+}
+.main-articles .container .article-section .article ul li span:hover {
+  color: #4154FF;
+}
+.main-articles .container .article-section .article ul li:nth-child(2n+0) {
+  padding: 0 5px;
+}
+
 .main-jumbo2 {
   height: 730px;
   padding: 0 300px;
-  background-image: linear-gradient(180deg, rgba(0, 2, 17, 0.16) 0%, #000211 100%), url("../img/banner2-2x.jpg");
+  background-image: linear-gradient(180deg, rgba(0, 2, 17, 0.16) 0%, #000000 100%), url("../img/banner2-2x.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;

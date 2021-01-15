@@ -16,6 +16,11 @@ header {
 }
 
 .header-right {
+  display: flex;
+  flex-direction: row;
+  ul:first-child {
+    padding-top: 11px;
+  }
   ul {
     @include listInline;
     li {
