@@ -130,11 +130,11 @@
             <img src="img/logo.png" alt="Avada fitness logo footer">
             <p>Ac aliquam neque sagittis diam faucibus vitae purus turpis phasellus. Pellentesque consectetur amet purus ultrices mauris.</p>
             <ul>
-              <li><i class="fab fa-facebook-f"></i></li>
-              <li><i class="fab fa-twitter"></i></li>
+              <li v-for="social in socialNetworkData" :key="social.name"><i :class="social.name"></i></li>
+              <!-- <li><i class="fab fa-twitter"></i></li>
               <li><i class="fab fa-youtube"></i></li>
               <li><i class="fab fa-instagram"></i></li>
-              <li><i class="fab fa-linkedin-in"></i></li>
+              <li><i class="fab fa-linkedin-in"></i></li> -->
             </ul>
          </div>
          <div class="new-article"> <!--NEW-ARTICLE-->

@@ -3,6 +3,13 @@ var app = new Vue ({
   data: {
     logoData:[],
     headerData:[],
+    socialNetworkData:[
+      { name: 'fab fa-facebook-f' },
+      { name: 'fab fa-twitter', },
+      { name: 'fab fa-youtube', },
+      { name: 'fab fa-instagram', },
+      { name: 'fab fa-linkedin-in' }
+    ],
     activitiesData:[
       {
         name: 'Yoga',
