@@ -1,4 +1,36 @@
 .main-sport {
   height: 530px;
   background-color: $colorWhite;
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .activities {
+      text-align: center;
+      img:first-child {
+        width: 150px;
+        padding-top: 80px;
+      }
+      img {
+        width: 80px;
+      }
+      p {
+        color: gray;
+        font-size: 21px;
+        padding: 0 35px;
+        line-height: 1.5;
+      }
+      p:last-child {
+        font-weight: 500;
+        padding-top: 45px;
+        font-size: 18px;
+        color:$colorBlack;
+        i {
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+
 }

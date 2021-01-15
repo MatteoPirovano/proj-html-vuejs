@@ -100,7 +100,12 @@
     </section>
     <div class="main-sport"><!-- MAIN-SPORT -->
       <div class="container">
-
+        <div  class="activities" v-for="activity in activitiesData">
+          <img :src="activity.logo" :alt="activity.name"><br>
+          <img src="img/wave.svg" alt="wave-line">
+          <p>{{activity.description}}</p>
+          <p>{{activity.linkDescription}}  <i class="fas fa-angle-right"></i></p>
+        </div>
       </div>
     </div>
     <div class="main-last"><!-- MAIN-LAST -->

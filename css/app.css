@@ -300,6 +300,37 @@ header {
   height: 530px;
   background-color: #ffffff;
 }
+.main-sport .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-sport .container .activities {
+  text-align: center;
+}
+.main-sport .container .activities img:first-child {
+  width: 150px;
+  padding-top: 80px;
+}
+.main-sport .container .activities img {
+  width: 80px;
+}
+.main-sport .container .activities p {
+  color: gray;
+  font-size: 21px;
+  padding: 0 35px;
+  line-height: 1.5;
+}
+.main-sport .container .activities p:last-child {
+  font-weight: 500;
+  padding-top: 45px;
+  font-size: 18px;
+  color: #000000;
+}
+.main-sport .container .activities p:last-child i {
+  vertical-align: middle;
+}
 
 .main-last {
   height: 530px;
