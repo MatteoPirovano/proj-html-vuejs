@@ -248,6 +248,7 @@ header {
   background-image: linear-gradient(90deg, #060606 45%, rgba(6, 6, 6, 0) 75%), url("../img/banner1-2x.jpg");
   background-position: top right;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .main-jumbo .container {
   padding: 0 90px;
@@ -294,6 +295,38 @@ header {
 }
 .jumbo-section ul i {
   vertical-align: middle;
+}
+
+.main-jumbo2 {
+  height: 730px;
+  padding: 0 300px;
+  background-image: linear-gradient(180deg, rgba(0, 2, 17, 0.16) 0%, #000211 100%), url("../img/banner2-2x.jpg");
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.main-jumbo2 h2 {
+  font-size: 60px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.main-jumbo2 img {
+  width: 85px;
+}
+.main-jumbo2 p {
+  font-size: 23px;
+  font-weight: 400;
+  color: #ffffff;
+}
+.main-jumbo2 div {
+  width: 210px;
+  margin-top: 40px;
+  font-size: 20px;
 }
 
 .main-sport {
